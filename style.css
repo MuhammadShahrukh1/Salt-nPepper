@@ -1,0 +1,755 @@
+@font-face {
+    font-family: "apercu";
+    src: url(./assest/fonts/aperculight.otf);
+}
+@font-face {
+    font-family: "futura";
+    src: url(./assest/fonts/futurak.ttf);
+}
+@font-face {
+    font-family: "butler";
+    src: url(./assest/fonts/butlerbold.otf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.header{
+    width: 100%;
+    background-color: black;
+    height: 90px;
+}
+.nav-bar{
+    max-width: 1140px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto;
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+}
+.toggle-btn{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    display: none;
+}
+.logo{
+    display: inline-block;
+    /* line-height: 15px; */
+}
+.logo img{
+    width: 180px;
+    height: 80px;
+}
+.menu-list{
+    display: flex;
+    gap: 30px;
+    /* line-height: 5px; */
+}
+/* .order-li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+} */
+.menu-list li{
+    list-style-type: none;
+}
+.menu-list li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.franchise-btn{
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 10px 10px;
+}
+.order-btn{
+    background-color: red;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+.order-btn-mobile{
+    display: none;
+}
+section{
+    max-width: 100%;
+}
+.slider{
+    width: 100%;
+}
+.slider img{
+    width: 100%;
+}
+.brand-section{
+    width: 100%;
+    padding: 70px 15px;
+    overflow: hidden;
+    display: block;
+}
+section .brand{
+    max-width: 1340px;
+    margin: 0px auto;
+    padding: 0px 15px;
+
+}
+.brand-text{
+    text-align: center;
+    color: #fff;
+}
+section .brand .brand-text h2{
+    font-family: "apercu";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    /* letter-spacing: 1px; */
+}
+section .brand .brand-text h2 span{
+    font-family: "futura";
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62px;
+}
+section .brand .brand-text p{
+    font-family: "apercu";
+    letter-spacing: 0.05rem;
+    font-size: 16px;
+    opacity: 0.7;
+    line-height: 19px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.brand-items{
+    width: 1340px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.restaurant{
+    width: 280px;
+}
+.restaurant .fig{
+    /* background-color: #fff; */
+    width: 100%;
+    height: 140px;
+}
+.restaurant .fig img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #fff;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+.order-now{
+    margin-top:20px ;
+}
+.res-btn{
+    width: 175px;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    height: 45px;
+}
+.franchise-section{
+    position: relative;
+    background-color: rgba(255,255,255,0.06);
+    width: 100%;
+    /* width: 1340px;
+    margin: 0px auto; */
+
+    padding: 70px;
+    /* display: block; */
+}
+.franchise-container, .express-container{
+    max-width: 1340px;
+    margin: 0px auto;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+.franchise-text{
+    width: 100%;
+}
+.franchise-text h2, .express-text h2{
+    font-size: 60px;
+    font-style: normal;
+    font-weight: lighter;
+    color: #fff;
+    text-align: center;
+    font-family: "butler";
+    line-height: 60px;
+    margin-bottom: 30px;
+
+}
+.franchise-text h2 span, .express-text h2 span{
+    font-family: "futura";
+    font-size: 65px;
+    line-height: 100px;
+    /* font-weight: 200; */
+}
+.franchise-text p{
+    color:rgba(255,255,255,0.7);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 19px;
+    font-family: "apercu";
+    letter-spacing: 0.04rem;
+    margin-bottom: 48px;
+}
+.right-one{
+    position: absolute;
+    top: 32px;
+    right: 32px;
+}
+.right-one img{
+    max-width: 100%;
+    vertical-align: center;
+}
+.isb-franchise{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;margin-bottom: 30px;
+}
+.isb-franchise .contact-detail{
+    max-width: 650px;
+    padding: 0px 10px;
+    /* border: 1px solid red; */
+}
+.isb-franchise .contact-detail small{
+    color: #ed1c24;
+    display: block;
+    font-family: "apercu";
+    font-size: 16px;
+    letter-spacing: 0.48em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.isb-franchise .contact-detail h3{
+    color: #fff;
+    font-style: normal;
+    font-size: 32px;
+    font-family: "apercu";
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 24px;
+}.isb-franchise .contact-detail p, .express-contact-detail p{
+    font-family: "apercu";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: none;
+    letter-spacing: 0.03em;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 10px;
+}
+.isb-franchise .contact-detail button,
+.express-contact-detail button{
+    width: 175px;
+    height: 50px;
+    margin-top: 40px;
+    border: 1px solid rgba(255,255,255,07);
+    border-radius: 50px;
+    color: #fff;
+    background-color: transparent;
+    font-size: 15px;
+    line-height: 40px;
+    position: relative;
+    text-align:left;
+    padding-left: 25px;
+}
+.isb-franchise .contact-detail button span,
+.express-contact-detail button span{
+    position: absolute;
+    top: 8px;
+}
+.isb-franchise .contact-detail button i,
+.express-contact-detail button i{
+    font-size: 25px;
+    margin-left: 10px;
+    line-height: 30px;
+    color: #fff;
+    background-color: red;
+    border-radius: 100px;
+}
+.isb-img{
+    /* width: 50%; */
+    display: inline-block;
+    /* border: 1px solid #fff; */
+}
+.isb-img img{
+    width: 650px;
+}
+.express-section{
+    width: 100%;
+    padding: 70px 0px 38px;
+    position: relative;
+}
+.left-one{
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+.shade-right{
+    position: absolute;
+    right: 0px;
+    top: -50px;
+}
+.main-express-franchise{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.emperium, .gujrawala, .sargodha{
+    width: 400px;
+}
+.emperium-img img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}.express-contact-detail{
+    margin-bottom: 30px;
+}
+.express-contact-detail small{
+    font-family: "apercu";
+    font-size: 14px;
+    line-height: 15px;
+    font-style: normal;
+    font-weight: 400;
+    color: #ED1C24;
+    text-align: center;
+    margin: 24px 0px 10px;
+    letter-spacing: 0.48em;
+}
+.express-contact-detail h3{
+    color: #fff;
+    font-style: normal;
+    font-size: 32px;
+    font-family: "apercu";
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 24px;
+}
+
+
+
+.franchise-opening-soon{
+    width: 100%;
+    padding: 60px 0px 48px;
+    position: relative;
+    /* border: 1px solid red; */
+}
+.container{
+    width: 1320px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    /* border: 1px solid blue; */
+}
+.row{
+    display: flex;
+    margin: 0px -15px;
+    flex-wrap: wrap;
+}
+.text{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 32px;
+    padding: 0px 15px;
+}
+.village-section{
+    width: 100%;
+    /* border: 1px solid red; */
+    align-items: center;
+}
+.village-section .village-img{
+    width: 50%;
+    flex: 0 0 50%;
+}
+.village-section .contact-detail{
+    flex: 0 0 50%;
+    width: 50%;
+    padding: 10px 20px;
+}
+.village-section .village-img img{
+    width: 100%;
+}
+.franchise-opening-soon .container .row .text h2,
+.village-franchise-section .container .row .text h2{
+    text-align: center;
+    /* margin-bottom: 8px; */
+    font-family: 'butler';
+    font-style: normal;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+.franchise-opening-soon .container .row .text h2 span,
+.village-franchise-section .container .row .text h2 span{
+    font-family: 'futura';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+.franchise-opening-soon .container .row .text h2 small{
+    font-style: normal;
+    font-size: 26px;
+    line-height: 31px;
+    color: #FFFFFF;
+}
+.position-hold{
+    justify-content: center;
+}
+.position-hold .location-card{
+    /* height: 230px; */
+    border-radius: 5px;
+    background: #fff;
+    padding: 25px 15px;
+    flex: 0 0 30%;
+    max-width: 30%;
+    text-align: center;
+    /* margin-bottom: 30px; */
+    margin: 0px 15px 30px;
+}
+.position-hold .location-card img{
+    display: block;
+    margin: 0px auto 16px;
+}
+.position-hold .location-card small{
+    font-family: 'apercu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.48em;
+    text-transform: uppercase;
+    color: #ED1C24;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.position-hold .location-card h4,
+.position-hold .location-card p{
+    font-family: 'butler';
+    font-style: normal;
+    /* font-weight: 200; */
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+}
+.position-hold .location-card h4 span{
+    font-size: 24px;
+}
+.insta-custom-section{
+    width: 100%;
+    padding-bottom: 80px;
+}
+.insta-feed-heading{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.insta-custom-section .insta-feed-heading h3{
+    font-family: 'butler';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 50px;
+    color: #fff;
+}
+.insta-custom-section .insta-images{
+    display: flex;
+    /* display: block; */
+    width: 100%;
+    justify-content: space-between;
+}
+.insta-custom-section .insta-images .img{
+    width: 19%;
+    height: auto;
+    /* display: inline-block; */
+    margin: 0px !important;
+    text-align: center;
+}
+.insta-custom-section .insta-images .img img{
+    width: 100%;
+    height: auto;
+}
+.village-franchise-section{
+    background-color: rgba(255,255,255,0.06);
+    padding: 48px 0px;
+    overflow: hidden;
+}
+.village-franchise-section .container .row .contact-detail small{
+    font-family: 'apercu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.48em;
+    text-transform: uppercase;
+    color: #ED1C24;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.village-franchise-section .container .row .contact-detail h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    font-family: "apercu";
+}
+.village-franchise-section .container .row .contact-detail h3 span{
+    font-family: 'futura';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.village-franchise-section .container .row .contact-detail p{
+    font-family: 'Apercu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
+}
+.village-franchise-section .container .row .contact-detail button{
+    width: 175px;
+    height: 50px;
+    border-radius: 50px;
+    font-family: "butler";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    margin-top: 40px;
+    background-color: #28a745;
+    border: 1px solid #28a745;
+    text-align: left;
+    padding-left: 25px;
+    vertical-align: middle;
+    position: relative;
+}
+.village-franchise-section .container .row .contact-detail button span{
+    color: #fff;
+    background: #28a745;
+    font-size: 24px;
+    position: absolute;
+    right: 25px;
+    top: 13px;
+
+}
+
+
+@media only screen and (max-width:992px){
+    section .brand{
+        max-width: 960px;
+        margin: 0px auto;
+    }
+    .brand-section{
+        padding: 70px 15px 32px 15px !important;
+    }
+    .brand-items{
+        width: 100%;
+        padding: 0px;
+    }
+.menu-list{
+    gap: 20px;
+}
+.logo img{
+    width: 150px;
+    height: 75px;
+    /* line-height: 1500px; */
+}
+.franchise-btn{
+    padding: 10px 5px;
+}
+.order-btn{
+    padding: 10px 10px;
+}
+.container{
+        max-width: 960px;
+        /* min-width: 769px; */
+    }
+    .village-franchise-section .container .row .contact-detail{
+        text-align: center;
+    }
+
+
+}
+@media only screen and (max-width:820px){
+    .menu-list{
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        background-color: black;
+        gap: 0px;
+        overflow: hidden;
+
+    }
+    .order-btn{
+        display: none;
+    }
+    .order-li{
+        display: none;
+    }
+    .franchise-btn{
+        display: inline-block;
+        /* width: 20%; */
+        border: none;
+        padding: 0px;
+    }
+    .order-btn-mobile{
+        display: block;
+    }
+    .order-btn1{
+        background-color: red;
+        color: #fff;
+        border-radius: 50px;
+        padding: 10px 20px;
+    }
+    .toggle-btn{
+        display: block;
+    }
+    .menu-list li{
+        padding: 15px;
+    }
+    .logo{
+        margin-left: 70px;
+    }
+    #toggle-list{
+        transition: ease-in-out 0.5s;
+    }
+}
+@media only screen and (max-width:1200px){
+    section .brand{
+        max-width:1140px;
+        margin: 0px auto;
+    }
+    .brand-section{
+        padding: 70px 15px;
+    }
+
+.container{
+        max-width: 1140px;
+    }
+    .village-franchise-section .container .row .contact-detail{
+        text-align: center;
+    }
+}
+@media only screen and (max-width:768px){
+    section .brand{
+        max-width: 720px;
+        margin: 0px auto;
+    }
+    .brand-section{
+        padding: 32px 15px !important;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    .brand-text p{
+        font-size: 14px !important;
+        line-height: 35px !important;
+        margin-bottom: 14px !important;
+
+    }
+    .brand-text h2{
+        font-weight: 400 !important;
+        font-size: 24px !important;
+        line-height: 29px !important;
+    }
+    .brand-text h2 span{
+        font-size: 24px !important;
+        line-height: 29px !important;
+    }
+
+.container{
+        max-width: 720px;
+    }
+    .franchise-opening-soon .container .row .text h2,
+    .village-franchise-section .container .row .text h2{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .franchise-opening-soon .container .row .text h2 span,
+    .village-franchise-section .container .row .text h2 span{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .franchise-opening-soon .container .row .text h2 small{
+        font-size: 16px;
+    }
+    .position-hold .location-card{
+        flex: 0 0 29%;
+        max-width: 29%;
+    }
+    .village-franchise-section{
+        padding: 32px 15px;
+    }
+    .village-franchise-section .container .row .contact-detail h3{
+        font-size: 22px;
+    }
+    .village-franchise-section .container .row .contact-detail{
+        text-align: center;
+    }
+    .village-franchise-section .container .row .contact-detail h3 span{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .village-section .village-img{
+        width: 100%;
+        flex: 0 0 100%;
+    }
+    .village-section .contact-detail{
+        flex: 0 0 100%;
+        width: 100%;
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .container{
+        max-width: 100%;
+    }
+    .position-hold .location-card{
+        flex: 0 0 44%;
+        max-width: 44%;
+    }
+}
